@@ -2,39 +2,24 @@
 
 
 html {
- background-color:#cccccc;
- 
+ background-image: url("./../images/blue.jpg");
 
 }
 
 body { 
 
-
-<background img src="maxresdefaultjpg"
- width: 80%; 
+ width: 90%; 
  margin-left: auto;
  margin-right: auto; 
  
  
  }
-.navigation 
-{
-	background-color: #00004d;
-	color: #FFFFFF;
-	padding: 0px 0px 0px 0px;
-	width: 100%;
-	display: table;
-	
-}
+
 .bulletpoints
 {
-	
 	padding: 0px 0px 0px 0px;
 	width: 100%;
 	display: table;
-
-	
-	
 }
 .navvbar{
     list-style-type: none;
@@ -47,4 +32,26 @@ body {
 	 list-style-type:none;
 	 display: inline-flex;	
 		 
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 0px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
 }
