@@ -17,10 +17,31 @@
 	</nav>	
 		
 	<form> 
-	<div>    
+	<div>  
+	
+	
+	<input onkeydown="Check(event);" onkeyup="Check(event);"/>
+
+	<script>
+	
+	function myFunction (submit)
+	{
+	function Check(e) {
+    var keyCode = (e.keyCode ? e.keyCode : e.which);
+    if (keyCode > 47 && keyCode < 58) {
+        e.preventDefault();
+	
+	
+	}
+	
+	
+	
+	
+	
+	</script>
 	<input type="name"
 	placeholder="name"      
-	alt="Enter name" 
+	alt="Enter name"
 	required="required" /> 
 	<br/>
 	<input type="email"  
@@ -28,12 +49,14 @@
 	alt="Enter email"     
 	required="required" />
 	<br/>
-	<input type="Comments"  
+	<input type="Comments" 
+	input id="textboxid"	
 	placeholder="Your Comments..."     
 	alt="Enter Comments"     
 	required="required"
 	
 	<button>
+	
 	<button type="submit">
 	Submit   </button>
 	

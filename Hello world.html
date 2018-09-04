@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+	</head>
+		<body>
+		
+		<input type= "text"
+			id="num1"
+			placeholder=number     
+			alt="Enter number"/> 
+		
+			
+		<input type= "text"
+			id="num2"
+			placeholder=number     
+			alt="Enter number"/> 
+			<br/>
+		 <input type = "output"
+		 id = "result" readonly>
+		
+		<button type="button"		
+		Sum onclick = "add()"/>
+		
+		
+		
+		
+		
+			<script> 
+			
+			function add()
+			{
+			
+			var x = document.getElementById("num1").value;
+			
+			var y = document.getElementById('num2').value;		
+		   
+			
+			var sum = parseInt(x) + parseInt(y);
+			 document.getElementById("result").value = sum
+			
+			
+			}
+			
+		
+			 </script>
+			 
+		</body>
+	</html>
+			 
+			 
+	

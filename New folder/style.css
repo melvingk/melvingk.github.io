@@ -14,7 +14,13 @@ body {
  
  
  }
-
+ 
+#textboxid
+{
+    height:200px;
+    font-size:14pt;
+}
+ 
 .bulletpoints
 {
 	padding: 0px 0px 0px 0px;
