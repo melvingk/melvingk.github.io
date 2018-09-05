@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html> 
+	<head>
+	</head>
+		<body>
+
+                    <input type= "text" 
+                    id="num1"
+                    placeholder=number     
+                    alt="Enter number"/>
+
+                    <input type= "text"
+                    id="num2"
+                    placeholder=number     
+                    alt="Enter number"/> 
+                    <br/>
+
+                    <input type= "text"
+                    id="num3"
+                    placeholder=number     
+                    alt="Enter number"/> 
+                    <br/>
+
+                    <input type = "output"
+                    id = "result" readonly/>
+
+                    <button 
+                    type="button" onclick="add()">add them!
+                    </button>
+                    
+
+
+            <script>
+                            
+                         
+
+                        function add()
+                        {
+                        var x = document.getElementById("num1").value;
+                        
+                        var y = document.getElementById('num2').value;
+                        
+                        var z = document.getElementById('num3').value		
+                                
+                        var sum = +(x) + +(y) + +(z);
+
+                        if ((x =="" || y =="" || z=="") || (x=="" && y==""&& z==""))
+                        {
+
+                            alert("Dude why arent you putting anything?");
+                            var x = document.getElementById("num1").focus;
+                        } 
+                        else 
+                        {
+
+                        document.getElementById("result").value = sum;
+
+                        }
+                            
+                        if (isNaN(x) || isNaN(y) || isNaN(z))
+                        {
+                            alert("Dude why are you putting letters?");
+
+                        }
+
+                        }
+
+
+
+            </script>
+        </body>
+     </head>
+</html>
+            

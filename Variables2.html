@@ -1,0 +1,43 @@
+<html>
+    <script>
+
+        function maker(nn, aa, oo)
+        {
+            var person = {name:nn,age:aa,occupation:oo};                                            //creates an object
+            name= document.getElementById("person1").value;                                         // gets name, age and occupation from the body
+            age= document.getElementById("person2").value;
+            occupation= document.getElementById("person3").value;
+            var result= "The name is " + name + " his age is " +   age   + " and his occupation " +  occupation;            // concatinates everything together
+            document.getElementById("personOutput").value=result;                                               // takes the output from the user concatenation and uses it 
+                                               
+            bar(result);                                                                                     // calling the function bar
+            var names;                                                                                      // variable name declared
+            for (names=1; names<=result; names++)                                                          // for loop for the outputs from the user
+            {
+                document.write(names);
+            }
+        
+        }
+        function bar(n)                                                                                     // function appending elements into an array
+        {
+            var what = document.createElement("p");                                                         // creating a new element
+            what.textContent = n;                                                                           // content in the variable p is put into n              
+            var para = document.getElementById("bank");                                                     // gets the array in the body called bank
+        
+            para.appendChild(what);                                                                         // appends the stuff in n into the array bank
+
+        }
+    </script>
+    <body>
+            <input type= "text"  id= "person1" placeholder="text">                      <!--gives a textbox -->
+            <input type= "text"  id= "person2" placeholder="text">
+            <input type= "text" id= "person3" placeholder="text">  
+
+            <br><br><input type = "output" size = "100" id = "personOutput" readonly>       <!--gives a textbox that gives an output -->
+            <button type="submit" onclick= "maker()">Make a person </button>                 <!--creates a button -->
+
+            <ul id="bank">
+                <input> "Melvin", 243, "ivvsv"</input>
+            </ul>
+        </body>
+</html>

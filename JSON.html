@@ -1,0 +1,40 @@
+
+<html> 
+	<head>
+	    </head>
+		    <body>
+            
+             <p id="bob"> </p>
+            
+                     
+
+            <script>
+
+                var requestURL = 'https://raw.githubusercontent.com/ewomackQA/JSONDataRepo/master/example.json';                // the url that json is gettnig the stuff from 
+                var request = new XMLHttpRequest();                                                     // XMLHttpREquest- object can be used to request data from a web server. WE now set it to the variable var
+                request.open('GET', requestURL);                                                        // open  bascially accesses the url and gets the information from it
+                request.responseType = 'json'                                                           // states the return type
+                request.send();                                                                         // sends the request out
+                request.onload = function () 
+                {                                                                                        // creates a function that bascially onloads the data retrieved from the request
+                var superHeroes = request.response;                                                     // and then states the object now superheroes
+                
+                console.log(superHeroes);
+                }
+                // for (i=0; i <superHeroes.length;i++)
+                // {
+                // if (superHeroes=Eternal Flame";)
+                //     {
+                //         document.getElementById("bob").innerHTML="
+                //     }
+
+                // }
+
+                // }
+
+    
+
+            </script>
+        </body>
+     </head>
+</html>

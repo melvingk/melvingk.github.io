@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html onmousemove="moving()">
+    <script>
+        var T;
+        var S;
+        var FS=10;
+        function moving()
+        {
+            T = document.getElementById("textBox");
+            S=document.getElementById("SP");
+            S.style.top = event.clientY+ "px";
+            S.style.left=event.clientX + "px";
+            
+            if (event.ctrlKey)
+            { FS++ +"px";}
+            if (event.altKey)
+            { FS-- +"px";}
+
+            S.style.fontSize=FS;
+        }
+        function mouseout()
+        {
+            if(T.value!="")	
+
+            {
+                S.innerHTML = T.value;
+            }
+        }
+    </script>
+
+    <body>      
+        <input type ="text" id="textBox" onmouseleave="mouseout()" value = "lol">
+        <span style ="position:absolute; top:100; left:200" id="SP">The Shafeeq</span>
+    </body>
+
+</html>​

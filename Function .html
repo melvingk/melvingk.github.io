@@ -3,25 +3,42 @@
         <body>
 
 
-<input type= "text"
-			id="num1"
-			placeholder=number     
-            alt="Enter number"/>
-<input type= "output"
-			id="num2"
-			placeholder=number     
-			alt="Enter number"/> 
-            <br/>        
+<input type= "number"
+id="num1"
+placeholder=number     
+/>
+ 
+<input type = "output"
+id = "result" readonly>
+              
+<button 
+type="button" onclick="multi()">square
+
+</button>
 
 <script>
 
 
-function theSquare ()
+function multi()
 {
-    var x = document.getElementById('num1').value;
-    var multi = parseInt(x) * parseInt(x);
-}
+		
+			var x = document.getElementById("num1").value;		
+		   			
+			var multi = parseInt(x) *  parseInt(x);
 
+             if ((x =="" ))
+            {
+
+                alert("Dude why arent you putting anything?");
+
+            } 
+            else {
+
+            document.getElementById("result").value = multi;
+        
+            }
+
+}
 
 
    </script>
