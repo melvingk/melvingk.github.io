@@ -1,0 +1,37 @@
+<html>
+<body>
+<script>
+function aFunction(){
+var element = document.getElementById("demo");
+var alphaExp = /^[1-9]{1}$|^[1-4]{1}[0-9]{1}$|^50$/;
+if (element.value == ""){
+console.log("Field is empty");
+return false;
+}
+if (!(element.value.match(alphaExp))){
+console.log("Tried to use illegal Character");
+return false;
+}
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+
+
+
+}
+
+</script>
+<form onsubmit = "return aFunction()" action = "abc.html">
+<input id = "demo">
+<input type = "submit">
+</input>
+</form>
+</body>
+</html>

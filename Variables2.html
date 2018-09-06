@@ -7,14 +7,14 @@
             name= document.getElementById("person1").value;                                         // gets name, age and occupation from the body
             age= document.getElementById("person2").value;
             occupation= document.getElementById("person3").value;
-            var result= "The name is " + name + " his age is " +   age   + " and his occupation " +  occupation;            // concatinates everything together
+            var result= "The name is " + name + " his age is " +   age   + " and his occupation " +  occupation;  // concatinates everything together
             document.getElementById("personOutput").value=result;                                               // takes the output from the user concatenation and uses it 
                                                
             bar(result);                                                                                     // calling the function bar
             var names;                                                                                      // variable name declared
-            for (names=1; names<=result; names++)                                                          // for loop for the outputs from the user
+            for (names=1; names<=result; names++)                                                          // for loop for the outputs from the user statrting with one as one name will always occur
             {
-                document.write(names);
+                document.write(document.getElementById ("bank"));
             }
         
         }
@@ -29,7 +29,7 @@
         }
     </script>
     <body>
-            <input type= "text"  id= "person1" placeholder="text">                      <!--gives a textbox -->
+            <input type= "text"  id= "person1" placeholder="text">                             <!--gives a textbox -->
             <input type= "text"  id= "person2" placeholder="text">
             <input type= "text" id= "person3" placeholder="text">  
 
@@ -39,5 +39,6 @@
             <ul id="bank">
                 <input> "Melvin", 243, "ivvsv"</input>
             </ul>
+            
         </body>
 </html>
